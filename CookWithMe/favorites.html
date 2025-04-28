@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Favorites</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="brand-name">CookWithMe</a>
+        <a href="index.html" class="nav-link">Recipes</a>
+        <a href="favorites.html" class="nav-link active">Favorites</a>
+    </nav>
+
+    <h1>Favorites</h1>
+    <div id="no-favorites" class="no-favorites" style="display:none;">
+        <p><span class="heart-icon">♥</span> No favorite recipes yet</p>
+    </div>
+    <ul id="favorites-list" class="recipe-list"></ul>
+
+    <script src="script.js"></script>
+    <script>
+        setActiveNavLink('favorites.html');
+        renderFavoritesList();
+        updateOrderNotification();
+    </script>
+</body>
+</html>
